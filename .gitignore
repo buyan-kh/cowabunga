@@ -1,0 +1,172 @@
+# Cowabunga IDE Project - Git Ignore Rules
+
+# ===================================
+# OS Generated Files
+# ===================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.tmp
+*.temp
+
+# ===================================
+# Development Environment
+# ===================================
+.vscode/settings.json
+.vscode/launch.json
+.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+
+# ===================================
+# Node.js Dependencies & Build
+# ===================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.npm
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# ===================================
+# Build Outputs & Compiled Files
+# ===================================
+out/
+dist/
+build/
+*.js.map
+*.d.ts.map
+.build/
+.cache/
+coverage/
+
+# ===================================
+# TypeScript
+# ===================================
+*.tsbuildinfo
+.tscache/
+
+# ===================================
+# Logs
+# ===================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.npmrc
+
+# ===================================
+# Runtime & Testing
+# ===================================
+.nyc_output
+coverage/
+test-results/
+test-results.xml
+*.snap.actual
+.vscode-test/
+test_data/
+
+# ===================================
+# Environment & Config
+# ===================================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+config/local.json
+
+# ===================================
+# Temporary & Cache Files
+# ===================================
+.tmp/
+.temp/
+.cache/
+.parcel-cache/
+.next/
+.nuxt/
+.vuepress/dist
+
+# ===================================
+# Package Manager Locks (Optional)
+# ===================================
+# Uncomment if you want to ignore lock files
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# ===================================
+# Cowabunga Specific
+# ===================================
+# Development artifacts
+.cowabunga-dev/
+canvas-debug/
+performance-logs/
+
+# User-specific layouts (if implementing local storage backup)
+user-layouts/
+*.layout.backup
+
+# Profiling outputs
+*.cpuprofile
+*.heapprofile
+
+# Canvas screenshots for debugging
+canvas-screenshots/
+
+# ===================================
+# KEEP THESE FILES (DO NOT IGNORE)
+# ===================================
+# .cursor/ folder contains project rules - KEEP IT
+# *.md files are documentation - KEEP THEM
+# cowabunga-prd.md is the main product spec - KEEP IT
+# ide_features_wishlist.md is requirements - KEEP IT
+
+# ===================================
+# Platform Specific Builds
+# ===================================
+.vscode/extensions/**/out/
+extensions/**/dist/
+/out*/
+/extensions/**/out/
+build/node_modules
+
+# ===================================
+# Security & Sensitive Data
+# ===================================
+.env.*.local
+*.pem
+*.key
+secrets/
+.secrets/
+
+# ===================================
+# Large Binary Files
+# ===================================
+*.zip
+*.tar.gz
+*.rar
+*.7z
+*.dmg
+*.pkg
+*.deb
+*.rpm
+
+# But keep small essential binaries if any
+!src/assets/**/*.png
+!src/assets/**/*.jpg
+!src/assets/**/*.svg
+!src/assets/**/*.ico
